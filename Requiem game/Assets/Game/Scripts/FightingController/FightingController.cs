@@ -37,8 +37,7 @@ public class FightingController : MonoBehaviour
 
     void Start()
     {
-        transform.position = new Vector3(-13, -1, 0);
-        transform.rotation = Quaternion.Euler(0f, 45f, 0f);
+        
 
        
     }

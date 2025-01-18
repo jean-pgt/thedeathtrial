@@ -39,9 +39,7 @@ public class OpponentAI : MonoBehaviour
 
     void Start()
     {
-  
-        transform.position = new Vector3(-6, -1, -6);
-        transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+
     }
     void Awake()
     {
