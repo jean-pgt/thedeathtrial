@@ -1,0 +1,644 @@
+/** mixins **/
+/* MiSans */
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Light.woff') format('woff');
+  font-weight: 250;
+}
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Regular.woff') format('woff');
+  font-weight: 330;
+}
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Bold.woff') format('woff');
+  font-weight: 630;
+}
+/* MiSans */
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Light.woff') format('woff');
+  font-weight: 250;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Regular.woff') format('woff');
+  font-weight: 330;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Bold.woff') format('woff');
+  font-weight: 630;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-300.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-300.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-500.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-500.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-regular.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-regular.woff2") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* MiSans */
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Light.woff') format('woff');
+  font-weight: 250;
+}
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Regular.woff') format('woff');
+  font-weight: 330;
+}
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Bold.woff') format('woff');
+  font-weight: 630;
+}
+/* 汉仪力量黑简体 */
+@font-face {
+  font-family: 'HYLiLiangHeiJ';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/HYLiLiangHeiJ-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/HYLiLiangHeiJ-Regular.woff') format('woff');
+  font-weight: 400;
+}
+html,
+body {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 100vh;
+  color: #eee;
+}
+body {
+  width: 100%;
+  font-size: 16px;
+  background: url(../../../../assets/article-bg_4f53025f.png) center top no-repeat fixed;
+  background-size: cover;
+  color: #bababa;
+}
+.footer a {
+  color: #fff;
+}
+#app {
+  position: relative;
+  z-index: 2;
+  min-height: 86vh;
+}
+.top-nav {
+  width: 100%;
+  height: 78px;
+  background: url(../../../../assets/bg_1b3df081.png) no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 13.7%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.top-nav .logo,
+.top-nav .back-index {
+  display: block;
+}
+.top-nav .logo {
+  width: 263px;
+  height: 51px;
+  background: url(../../../../assets/logo_667f4c6c.png) center center no-repeat;
+  background-size: 100%;
+}
+.top-nav .back-index {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-0px -180px;
+width:139px;
+height:38px;
+
+}
+.top-nav .back-index:hover {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-261px -0px;
+width:139px;
+height:38px;
+
+}
+.container-article {
+  width: 1200px;
+  margin: 26px auto 0;
+  position: relative;
+  left: 20px;
+}
+.container-article .main #article .title-tips {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container-article .main #article .title-tips::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -52px;
+  left: -115px;
+  width: 1398px;
+  height: 113px;
+  background: url(../../../../assets/top-line_29737ed4.png) no-repeat;
+  background-size: 100%;
+  pointer-events: none;
+}
+.container-article .main #article .title-tips .back-news {
+  display: inline-block;
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-143px -180px;
+width:85px;
+height:30px;
+
+}
+.container-article .main #article .title-tips .back-news:hover {
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
+}
+.container-article .main #article .title-tips .artDate {
+  display: inline-block;
+  font-size: 18px;
+  color: #7f7f7f;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 450;
+  position: relative;
+  top: -5px;
+}
+.container-article .main #article .artInfo {
+  margin-top: 35px;
+  margin-bottom: 38px;
+  color: #222122;
+  font-size: 34px;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+}
+.container-article .main #article .artInfo .artTitle {
+  margin: 0;
+}
+.container-article .main #article .artText {
+  width: 1042px;
+  margin-bottom: 30px;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 450;
+  color: #222122;
+}
+.container-article .main #article .artText h1,
+.container-article .main #article .artText h2,
+.container-article .main #article .artText h3,
+.container-article .main #article .artText h4,
+.container-article .main #article .artText h5,
+.container-article .main #article .artText h6 {
+  color: #222122;
+  margin: 0;
+  line-height: 2em;
+}
+.container-article .main #article .artText strong {
+  font-weight: bold;
+}
+.container-article .main #article .artText .red,
+.container-article .main #article .artText .redb {
+  color: #ff6d0f;
+}
+.container-article .main #article .artText .redb {
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+}
+.container-article .main #article .artText .green {
+  color: #23b97f;
+}
+.container-article .main #article .artText p {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.85em;
+  word-break: break-word;
+}
+.container-article .main #article .artText a {
+  text-decoration: underline;
+  color: #233bde;
+  text-underline-offset: 5px;
+  word-break: break-word;
+}
+.container-article .main #article .artText a:hover {
+  text-decoration: none;
+}
+.container-article .main #article .artText h2 {
+  font-size: 22px;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+  margin-top: 27px;
+  margin-bottom: 2px;
+}
+.container-article .main #article .artText h3 {
+  padding-left: 15px;
+  font-size: 20px;
+  background: url(../../../../assets/icon-h3_9b1ed85c.png) left center no-repeat;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+  margin-bottom: 9px;
+}
+.container-article .main #article .artText h3 a {
+  display: inline-block;
+}
+.container-article .main #article .artText img {
+  display: inline-block;
+  max-width: 100% !important;
+  height: auto !important;
+  margin-top: 8px;
+}
+.container-article .main #article .artText .videoplayer {
+  width: 100%;
+  margin: 26px auto;
+}
+.container-article .main #article .artText .videoplayer video {
+  max-width: 100% !important;
+  height: auto !important;
+}
+.container-article .main #article .artText .table3,
+.container-article .main #article .artText .table4,
+.container-article .main #article .artText .tablepad12,
+.container-article .main #article .artText .tablepad,
+.container-article .main #article .artText .tablepadblue,
+.container-article .main #article .artText .table-txt {
+  text-align: center;
+  margin: 20px auto 26px;
+  border-collapse: collapse;
+  border-right: 1px solid #d4d4d4;
+  border-left: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.container-article .main #article .artText .table3 thead td,
+.container-article .main #article .artText .table4 thead td,
+.container-article .main #article .artText .tablepad12 thead td,
+.container-article .main #article .artText .tablepad thead td,
+.container-article .main #article .artText .tablepadblue thead td,
+.container-article .main #article .artText .table-txt thead td,
+.container-article .main #article .artText .table3 th,
+.container-article .main #article .artText .table4 th,
+.container-article .main #article .artText .tablepad12 th,
+.container-article .main #article .artText .tablepad th,
+.container-article .main #article .artText .tablepadblue th,
+.container-article .main #article .artText .table-txt th {
+  font-size: 18px;
+}
+.container-article .main #article .artText .table3 th,
+.container-article .main #article .artText .table4 th,
+.container-article .main #article .artText .tablepad12 th,
+.container-article .main #article .artText .tablepad th,
+.container-article .main #article .artText .tablepadblue th,
+.container-article .main #article .artText .table-txt th,
+.container-article .main #article .artText .table3 td,
+.container-article .main #article .artText .table4 td,
+.container-article .main #article .artText .tablepad12 td,
+.container-article .main #article .artText .tablepad td,
+.container-article .main #article .artText .tablepadblue td,
+.container-article .main #article .artText .table-txt td {
+  padding: 6px;
+  border-right: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  color: #222122;
+}
+.container-article .main #article .artText .table3 th,
+.container-article .main #article .artText .table4 th,
+.container-article .main #article .artText .tablepad12 th,
+.container-article .main #article .artText .tablepad th,
+.container-article .main #article .artText .tablepadblue th,
+.container-article .main #article .artText .table-txt th {
+  background-color: #d4d4d4;
+  border: none;
+  font-size: 22px;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+}
+.container-article .main #article .artText table {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  word-break: break-all;
+  word-wrap: break-word;
+  border-collapse: collapse;
+}
+.container-article .main #article .artText .table-pic {
+  text-align: center;
+  margin: 20px auto 8px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  color: #7f7f7f;
+}
+.container-article .main #article .artText .table-pic img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100% !important;
+  height: auto !important;
+  border: none;
+}
+.container-article .main #article .artText .table-pic td {
+  line-height: 1.8;
+}
+.container-article .main #article .artText .table-pic p {
+  margin: 0;
+}
+.container-article .main #article .artText .table-pic th,
+.container-article .main #article .artText .table-pic td {
+  border: none;
+}
+.container-article .main #article .artText .video_ctn {
+  max-width: 100%;
+}
+.container-article .main #article .artText .video_ctn video {
+  width: 100%;
+}
+#top {
+  display: none;
+  width: 68.25px;
+  height: 102.75px;
+  background: url(../../../../assets/top_9c5de4ab.png) no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  bottom: 160px;
+  right: 30px;
+  z-index: 2;
+}
+#top:hover {
+  background: url(../../../../assets/top-h_426b83db.png) no-repeat;
+  background-size: 100% 100%;
+}
+body.en .container-article {
+  margin-top: 30px;
+}
+body.en .container-article .main #article .artText {
+  padding-top: 4px;
+}
+body.jp .top-nav .logo {
+  width: 199px;
+  height: 51px;
+  background: url(../../../../assets/logo_3d4b4daa.png) center center no-repeat;
+  background-size: 100%;
+}
+body.jp .top-nav .back-index {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-87px -222px;
+width:83px;
+height:39px;
+
+}
+body.jp .top-nav .back-index:hover {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-0px -222px;
+width:83px;
+height:39px;
+
+}
+body.jp .container-article {
+  margin-top: 29px;
+}
+body.jp .container-article .main #article .title-tips::after {
+  bottom: -52px;
+  left: -115px;
+  background: url(../../../../assets/top-line-normal_1443e608.png) no-repeat;
+  background-size: 100%;
+}
+body.jp .container-article .main #article .title-tips .back-news {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-261px -42px;
+width:119px;
+height:36px;
+
+}
+body.jp .container-article .main #article .title-tips .artDate {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.jp .container-article .main #article .artInfo {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+  margin-top: 37px;
+  margin-bottom: 39px;
+}
+body.jp .container-article .main #article .artText {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.jp .container-article .main #article .artText h2,
+body.jp .container-article .main #article .artText h3 {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.jp .container-article .main #article .artText .redb {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.jp .container-article .main #article .artText p {
+  line-height: 1.9em;
+}
+body.jp .container-article .main #article .artText img {
+  margin-top: 5px;
+}
+body.jp .container-article .main #article .artText .table3 th,
+body.jp .container-article .main #article .artText .table4 th,
+body.jp .container-article .main #article .artText .tablepad12 th,
+body.jp .container-article .main #article .artText .tablepad th,
+body.jp .container-article .main #article .artText .tablepadblue th,
+body.jp .container-article .main #article .artText .table-txt th {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.jp .container-article .main #article .artText .table-pic {
+  margin: 20px auto 6px;
+}
+body.jp .footer {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.kr .top-nav .logo {
+  width: 201px;
+  height: 51px;
+  background: url(../../../../assets/logo_27b969be.png) center center no-repeat;
+  background-size: 100%;
+}
+body.kr .top-nav .back-index {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-0px -55px;
+width:185px;
+height:39px;
+
+}
+body.kr .top-nav .back-index:hover {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-0px -98px;
+width:185px;
+height:39px;
+
+}
+body.kr .container-article .main #article .title-tips::after {
+  left: -112px;
+  background: url(../../../../assets/top-line-kr_5fb8be01.png) no-repeat;
+  background-size: 100%;
+}
+body.kr .container-article .main #article .title-tips .back-news {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-0px -141px;
+width:181px;
+height:35px;
+
+}
+body.kr .container-article .main #article .title-tips .artDate {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+}
+body.kr .container-article .main #article .artInfo {
+  font-family: 'notosanskr', serif;
+  font-weight: 700;
+}
+body.kr .container-article .main #article .artText {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+}
+body.kr .container-article .main #article .artText h2,
+body.kr .container-article .main #article .artText h3 {
+  font-family: 'notosanskr', serif;
+  font-weight: 700;
+}
+body.kr .container-article .main #article .artText .table3 th,
+body.kr .container-article .main #article .artText .table4 th,
+body.kr .container-article .main #article .artText .tablepad12 th,
+body.kr .container-article .main #article .artText .tablepad th,
+body.kr .container-article .main #article .artText .tablepadblue th,
+body.kr .container-article .main #article .artText .table-txt th {
+  font-family: 'notosanskr', serif;
+  font-weight: 700;
+  padding: 10px;
+}
+body.kr .container-article .main #article .artText .table3 td,
+body.kr .container-article .main #article .artText .table4 td,
+body.kr .container-article .main #article .artText .tablepad12 td,
+body.kr .container-article .main #article .artText .tablepad td,
+body.kr .container-article .main #article .artText .tablepadblue td,
+body.kr .container-article .main #article .artText .table-txt td {
+  padding: 8px 6px;
+}
+body.kr .container-article .main #article .artText .table-pic td {
+  line-height: 1.75em;
+}
+body.zh-cht .top-nav .logo {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-0px -0px;
+width:257px;
+height:51px;
+
+}
+body.zh-cht .top-nav .back-index {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-261px -121px;
+width:86px;
+height:39px;
+
+}
+body.zh-cht .top-nav .back-index:hover {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-261px -164px;
+width:86px;
+height:39px;
+
+}
+body.zh-cht .container-article .main #article .title-tips::after {
+  bottom: -52px;
+  left: -115px;
+  background: url(../../../../assets/top-line-normal_1443e608.png) no-repeat;
+  background-size: 100%;
+}
+body.zh-cht .container-article .main #article .title-tips .back-news {
+  background: url(../../../../assets/sprite-96ca21_96ca210a.png);background-size:404px 265px;
+background-position:-261px -82px;
+width:118px;
+height:35px;
+
+}
+body.zh-cht .container-article .main #article .title-tips .artDate {
+  font-family: 'MiSans TC', serif;
+  font-weight: 450;
+}
+body.zh-cht .container-article .main #article .artInfo {
+  font-family: 'MiSans TC', serif;
+  font-weight: 630;
+}
+body.zh-cht .container-article .main #article .artText {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.zh-cht .container-article .main #article .artText h2,
+body.zh-cht .container-article .main #article .artText h3 {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.zh-cht .container-article .main #article .artText .table3 th,
+body.zh-cht .container-article .main #article .artText .table4 th,
+body.zh-cht .container-article .main #article .artText .tablepad12 th,
+body.zh-cht .container-article .main #article .artText .tablepad th,
+body.zh-cht .container-article .main #article .artText .tablepadblue th,
+body.zh-cht .container-article .main #article .artText .table-txt th {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.zh-cht .container-article .main #article .artText .table3 td,
+body.zh-cht .container-article .main #article .artText .table4 td,
+body.zh-cht .container-article .main #article .artText .tablepad12 td,
+body.zh-cht .container-article .main #article .artText .tablepad td,
+body.zh-cht .container-article .main #article .artText .tablepadblue td,
+body.zh-cht .container-article .main #article .artText .table-txt td {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+

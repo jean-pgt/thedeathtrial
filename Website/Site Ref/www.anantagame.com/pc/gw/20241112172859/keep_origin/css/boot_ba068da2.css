@@ -1,0 +1,1873 @@
+@charset "utf-8";
+
+/** mixins **/
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Noto黑体简体 */
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-300.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-300.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-500.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-500.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-700.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-sc-v26-latin_chinese-simplified-700.woff') format('woff');
+  font-weight: 700;
+}
+
+/* Noto黑体繁体 */
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-300.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-300.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-500.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-500.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-700.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-tc-v26-latin_chinese-traditional-700.woff') format('woff');
+  font-weight: 700;
+}
+
+/* Noto黑体日语 */
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-300.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-300.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-500.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-500.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-700.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-jp-v42-latin_japanese-700.woff') format('woff');
+  font-weight: 700;
+}
+
+/* Noto黑体韩语 */
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-300.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-300.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-500.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-500.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff') format('woff');
+  font-weight: 700;
+}
+
+/* Noto黑体泰语 */
+
+@font-face {
+  font-family: 'Noto Sans Thai';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-300.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-300.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-500.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-500.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans Thai';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-700.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-thai-v20-thai_latin-700.woff') format('woff');
+  font-weight: 700;
+}
+
+html {
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+[lang|="zh-hant"],
+[lang|="zh-hans"],
+[lang|="zh-cht"],
+[lang=zh-hk],
+[lang=zh-tw] {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+[lang|="jp"] {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+[lang|="kr"] {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+[lang|="th"] {
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+/* CSS Document */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+}
+
+strong,
+b {
+  font-weight: bold;
+  font-style: normal;
+}
+
+em {
+  font-weight: normal;
+  font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+a,
+select {
+  border: none;
+  outline: none;
+}
+
+input,
+textarea,
+button,
+a {
+  font: inherit;
+  color: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 999999s;
+  -webkit-transition: color 999999s ease-out, background-color 999999s ease-out;
+}
+
+#NIE-warning-dialog {
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+#NIE-topBar {
+  z-index: 999 !important;
+}
+
+#NIE-topBar * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+@font-face {
+  font-family: 'hyllhj';
+  src: url("https://comm.res.easebar.com/js/nie/ref/fonts/hyllhj.woff2") format('woff2'), url("https://comm.res.easebar.com/js/nie/ref/fonts/hyllhj.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansSC';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto-sans-sc-v12-latin_chinese-simplified-900.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto-sans-sc-v12-latin_chinese-simplified-900.woff") format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN';
+  src: url(../assets/SourceHanSansCN-Medium_0_3f60d205.woff2) format('woff2'), url(../assets/SourceHanSansCN-Medium_0_7f4ce732.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-b';
+  src: url(../assets/SourceHanSansCN-Heavy_0_f49f4ba4.woff2) format('woff2'), url(../assets/SourceHanSansCN-Heavy_0_00c3e576.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Bold.woff') format('woff');
+  font-weight: 630;
+}
+
+/* MiSans */
+
+@font-face {
+  font-family: 'MiSans-Light';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Light.woff') format('woff');
+  font-weight: 250;
+}
+
+@font-face {
+  font-family: 'MiSans-Regular';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Regular.woff') format('woff');
+  font-weight: 330;
+}
+
+@font-face {
+  font-family: 'MiSans-Demibold';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/nie/ref/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff2") format('woff2'), url("https://comm.res.easebar.com/js/nie/ref/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HYQiHei-90S';
+  src: url(../assets/HYQiHei-90S_01f01f30.woff) format('woff');
+}
+
+/* 汉仪旗黑 */
+
+@font-face {
+  font-family: 'HYQiHei';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/HYQiHei-50S.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/HYQiHei-50S.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'HYQiHei';
+  src: url(../assets/HYQiHei-90S_01f01f30.woff) format('woff');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'HYQiHei';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/HYQiHei-105J.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/HYQiHei-105J.woff') format('woff');
+  font-weight: 1000;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 14rem;
+  min-height: 7.68rem;
+  background: #000;
+  color: #eee;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-size: 0.16rem;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+}
+
+#NIE-copyRight {
+  background: #15161a !important;
+  padding: 1.6rem 0 0.8rem;
+}
+
+.font-pre::before {
+  position: absolute;
+  z-index: -99999;
+  left: -9999999.99rem;
+  top: -9999999.99rem;
+  content: 'Pre-Register';
+  font-family: 'SourceHanSansCN', "Microsoft YaHei", sans-serif;
+}
+
+.font-pre::after {
+  position: absolute;
+  z-index: -99999;
+  left: -9999999.99rem;
+  top: -9999999.99rem;
+  content: 'Pre-Register';
+  font-family: 'SourceHanSansCN-b', "Microsoft YaHei", sans-serif;
+}
+
+#feedback {
+  display: none;
+}
+
+#g-footer .content {
+  padding: 0.3rem 0 !important;
+}
+
+#g-yuyue .yuyue-pop #yuyue-agreement span,
+#g-yuyue .yuyue-pop #yuyue-agreement-email span {
+  white-space: normal;
+}
+
+.home {
+  width: 100%;
+  height: 39.6rem;
+  background: url(../assets/bg_fa79272d.jpg) no-repeat center top;
+  background-size: 100% auto;
+  position: relative;
+  color: #fff;
+}
+
+.home::before {
+  display: block;
+  content: '';
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.home .kvBox {
+  height: 11.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .kvBox .top {
+  padding: 0.48rem 3.56rem;
+  position: relative;
+}
+
+.home .kvBox .logo {
+  display: block;
+  float: left;
+}
+
+.home .kvBox .icon-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  float: right;
+  margin-top: -0.05rem;
+}
+
+.home .kvBox .icon-list .item {
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+
+.home .kvBox .icon-list .item:last-child {
+  margin-right: 0;
+}
+
+.home .kvBox .icon-list .item-2 {
+  display: inline-block;
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.19rem -2.31rem;
+  width: 0.6rem;
+  height: 0.63rem;
+  margin-right: 0.09rem;
+}
+
+.home .kvBox .icon-list .item-2:hover,
+.home .kvBox .icon-list .item-2.active {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.27rem -2.98rem;
+  width: 0.6rem;
+  height: 0.63rem;
+}
+
+.home .kvBox .icon-list .item.bgm {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.83rem -2.31rem;
+  width: 0.6rem;
+  height: 0.63rem;
+  margin-right: 0.25rem;
+}
+
+.home .kvBox .icon-list .item.bgm:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.27rem -2.31rem;
+  width: 0.6rem;
+  height: 0.63rem;
+}
+
+.home .kvBox .icon-list .item.bgm.pause {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.91rem -2.31rem;
+  width: 0.6rem;
+  height: 0.63rem;
+}
+
+.home .kvBox .icon-list .item.bgm.pause:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.55rem -2.31rem;
+  width: 0.6rem;
+  height: 0.63rem;
+}
+
+.home .kvBox .icon-list .item.logo1 {
+  display: inline-block;
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.59rem -1.03rem;
+  width: 1.11rem;
+  height: 0.51rem;
+  margin-right: 0.4rem;
+}
+
+.home .kvBox .channel-list {
+  width: 1.54rem;
+  height: 1.47rem;
+  background: url(../assets/sns-list-bg_838eafd0.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0.8rem;
+  left: -0.46rem;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.11rem 0 0.05rem 0.07rem;
+  display: none;
+}
+
+.home .kvBox .channel-list::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -0.09rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: url(../assets/sprite-647388_6473884d.png);
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.74rem -1.22rem;
+  width: 0.12rem;
+  height: 0.09rem;
+}
+
+.home .kvBox .channel-list.show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .kvBox .channel-list .channel-item {
+  display: block;
+  margin: 0 0.06rem;
+  position: relative;
+}
+
+.home .kvBox .channel-list .channel-item:hover .code-box {
+  display: block;
+}
+
+.home .kvBox .channel-list .channel-item.discord {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.55rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.discord:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.41rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.tiktok {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.59rem -1.58rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.tiktok:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.65rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.yt {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.27rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.yt:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.93rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.twitter {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.79rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.twitter:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.03rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.facebook {
+  left: -0.01rem;
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.17rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.facebook:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.27rem -3.99rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.instagram {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.31rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.instagram:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.69rem -3.65rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.reddit {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.97rem -1.58rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .channel-list .channel-item.reddit:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.35rem -1.58rem;
+  width: 0.34rem;
+  height: 0.3rem;
+}
+
+.home .kvBox .subscribers {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -4.3rem -0;
+  width: 2.93rem;
+  height: 1.94rem;
+  position: absolute;
+  top: 8.43rem;
+  left: 4.34rem;
+  font-family: 'HYLiLiangHeiJ', sans-serif;
+  text-align: center;
+}
+
+.home .kvBox .subscribers-box {
+  -webkit-transform: rotate(-27.5deg) skewX(14deg) scale(0.95);
+  transform: rotate(-27.5deg) skewX(14deg) scale(0.95);
+  position: absolute;
+  width: 2.93rem;
+  height: 1.94rem;
+  left: -0.03rem;
+  top: -0.02rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 0.4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 0.2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fefefe;
+}
+
+.home .kvBox .subscribers-box__title {
+  font-size: 0.24rem;
+  text-align: left;
+  line-height: 1em;
+}
+
+.home .kvBox .subscribers-box__num {
+  font-size: 0.48rem;
+  white-space: nowrap;
+  margin-top: -0.02rem;
+  display: inline-block;
+  -webkit-transform: scale(1, 1.1);
+  transform: scale(1, 1.1);
+  font-family: 'HYQiHei', sans-serif;
+  font-weight: 700;
+}
+
+.home .kvBox .btnPlay {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.27rem -1.03rem;
+  width: 1.28rem;
+  height: 1.24rem;
+  position: absolute;
+  top: 7.56rem;
+  right: 4.22rem;
+  cursor: pointer;
+}
+
+.home .kvBox .btnPlay:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.home .kvBox .yuyue-btn {
+  cursor: pointer;
+  pointer-events: auto;
+  position: absolute;
+  bottom: 0.9rem;
+  right: 6.24rem;
+}
+
+.home .kvBox .yuyue-btn:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.home .kvBox .yuyue-success {
+  cursor: pointer;
+  pointer-events: auto;
+  position: absolute;
+  bottom: 0.9rem;
+  right: 6.24rem;
+}
+
+.home .kvBox .yuyue-success:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+
+.home .rolePage {
+  width: 20.47rem;
+  height: 12.44rem;
+  position: relative;
+  margin: 3.27rem auto 0;
+}
+
+.home .rolePage::before {
+  content: '';
+  width: 100%;
+  height: 11.8rem;
+  background: url(../assets/bg2_675826e9.png) no-repeat center 0;
+  background-size: 20.47rem auto;
+  position: absolute;
+  top: -0.18rem;
+  left: 0;
+  pointer-events: none;
+}
+
+.home .rolePage img {
+  width: 100%;
+}
+
+.home .rolePage .title {
+  position: absolute;
+  top: -0.01rem;
+  right: 1rem;
+}
+
+.home .rolePage .roleBg {
+  width: 25.6rem;
+  height: 11.84rem;
+  position: absolute;
+  top: -1.7rem;
+  left: 50%;
+  margin-left: -12.8rem;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.home .rolePage .roleBg.on img {
+  opacity: 1;
+}
+
+.home .rolePage .roleBg img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.home .rolePage .roleName {
+  position: absolute;
+  left: 0.98rem;
+}
+
+.home .rolePage .roleName img {
+  width: auto;
+  height: 100%;
+}
+
+.home .rolePage .vlog {
+  width: 3.83rem;
+  height: 6.14rem;
+  position: absolute;
+  top: 3.01rem;
+  left: 3.3rem;
+  z-index: 1;
+  -webkit-transition: z-index 0.6s ease-in-out;
+  transition: z-index 0.6s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-font-smoothing: antialiased;
+}
+
+.home .rolePage .vlog::after {
+  content: '';
+  width: 4.98rem;
+  height: 6.87rem;
+  background: url(../assets/vlog_bg2_4c7dc41b.png) no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  top: -1.08rem;
+  left: -0.48rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.home .rolePage .vlog .img {
+  width: 100%;
+  height: 4.27rem;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .rolePage .vlog .img img {
+  width: 3.85rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.45s ease-out;
+  transition: all 0.45s ease-out;
+}
+
+.home .rolePage .vlog .img img:nth-child(1) {
+  opacity: 1;
+}
+
+.home .rolePage .vlog .btnHeart {
+  width: 0.39rem;
+  height: 0.37rem;
+  margin-top: 0.29rem;
+  margin-left: 0.27rem;
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.home .rolePage .vlog .btnHeart::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url(../assets/heart_bdc715f0.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home .rolePage .vlog1 {
+  mix-blend-mode: normal;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.home .rolePage .vlog1.on {
+  z-index: 3;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.home .rolePage .vlog1.on .img img:nth-child(2) {
+  opacity: 1;
+}
+
+.home .rolePage .vlog1.on .btnHeart {
+  background: url(../assets/heart_red_08c57c76.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.home .rolePage .vlog2 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.home .rolePage .vlog2.on {
+  z-index: 3;
+  pointer-events: all;
+  mix-blend-mode: normal;
+  -webkit-animation: z_xiantiao_hecheng_1_000_anim 0.576s 0.1s linear both, z_xiantiao_hecheng_1_000_transform_bezier_anim 0.576s 0.1s both;
+  animation: z_xiantiao_hecheng_1_000_anim 0.576s 0.1s linear both, z_xiantiao_hecheng_1_000_transform_bezier_anim 0.576s 0.1s both;
+}
+
+.home .rolePage .vlog2 .img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.home .rolePage .vlog2 .btnHeart {
+  background: url(../assets/heart_red_08c57c76.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.home .rolePage .rightBox {
+  width: 5.64rem;
+  height: 5.38rem;
+  position: absolute;
+  top: 2.7rem;
+  right: 1.14rem;
+  z-index: 2;
+}
+
+.home .rolePage .rightBox .eamoImg {
+  width: 2.8rem;
+  height: 2.77rem;
+  display: block;
+  margin-left: 0.15rem;
+  position: relative;
+}
+
+.home .rolePage .rightBox .eamoImg::after {
+  content: '';
+  width: 4.26rem;
+  height: 3.22rem;
+  background: url(../assets/sprite-647388_6473884d.png);
+  background-size: 11.08rem 7.55rem;
+  background-position: -0 -0;
+  position: absolute;
+  left: -0.63rem;
+  top: -0.48rem;
+}
+
+.home .rolePage .rightBox .emoTxt {
+  position: absolute;
+  right: 2.65rem;
+  top: -0.33rem;
+}
+
+.home .rolePage .rightBox .audioBox {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.27rem -0;
+  width: 3.77rem;
+  height: 0.99rem;
+  margin-top: -0.34rem;
+  position: relative;
+}
+
+.home .rolePage .rightBox .audioBox::before {
+  content: '';
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.74rem -1.03rem;
+  width: 0.15rem;
+  height: 0.15rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.home .rolePage .rightBox .audioBox.on::before {
+  display: none;
+}
+
+.home .rolePage .rightBox .audioBox .head {
+  width: 0.78rem;
+  height: 0.78rem;
+  float: left;
+  margin-top: 0.1rem;
+  margin-left: 0.3rem;
+}
+
+.home .rolePage .rightBox .audioBox .audioIcon {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.47rem -2.31rem;
+  width: 0.43rem;
+  height: 0.57rem;
+  float: left;
+  margin-left: 0.47rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+
+.home .rolePage .rightBox .audioBox .btn {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.59rem -1.58rem;
+  width: 0.96rem;
+  height: 0.45rem;
+  float: left;
+  margin-top: 0.25rem;
+  margin-left: 0.35rem;
+  cursor: pointer;
+}
+
+.home .rolePage .rightBox .audioBox .btn:hover,
+.home .rolePage .rightBox .audioBox .btn.on {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.74rem -1.03rem;
+  width: 0.96rem;
+  height: 0.45rem;
+}
+
+.home .rolePage .rightBox .word {
+  width: 3.62rem;
+  height: 0.9rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0.6rem;
+}
+
+.home .rolePage .rightBox .word .voice-text {
+  font-size: 0.28rem;
+  font-weight: 630;
+  color: #fff;
+  line-height: 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+}
+
+@-webkit-keyframes moveToLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  90% {
+    opacity: 1;
+    -webkit-transform: translateX(calc(-101% + 3.6rem));
+    transform: translateX(calc(-101% + 3.6rem));
+  }
+
+  94% {
+    opacity: 1;
+    -webkit-transform: translateX(calc(-101% + 3.6rem));
+    transform: translateX(calc(-101% + 3.6rem));
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(calc(-101% + 3.6rem));
+    transform: translateX(calc(-101% + 3.6rem));
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  90% {
+    opacity: 1;
+    -webkit-transform: translateX(calc(-101% + 3.6rem));
+    transform: translateX(calc(-101% + 3.6rem));
+  }
+
+  94% {
+    opacity: 1;
+    -webkit-transform: translateX(calc(-101% + 3.6rem));
+    transform: translateX(calc(-101% + 3.6rem));
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(calc(-101% + 3.6rem));
+    transform: translateX(calc(-101% + 3.6rem));
+  }
+}
+
+.home .rolePage .headBox {
+  width: 7.32rem;
+  height: 0.86rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  margin-left: -3.66rem;
+}
+
+.home .rolePage .headBox .headSwiper {
+  width: 3.3rem;
+  height: 100%;
+  margin: 0 auto 0;
+  position: relative;
+}
+
+.home .rolePage .headBox .headSwiper .swiper-wrapper {
+  height: 100%;
+}
+
+.home .rolePage .headBox .headSwiper .swiper-slide {
+  height: 0.86rem;
+  background: url(../assets/head_bg_0628284f.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.home .rolePage .headBox .headSwiper .swiper-slide.swiper-slide-active {
+  background-image: url(../assets/head_bg_h_ab90948f.png);
+}
+
+.home .rolePage .headBox .headSwiper .swiper-slide img {
+  width: 0.94rem;
+  height: 0.5rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.home .rolePage .headBox .btnPrev,
+.home .rolePage .headBox .btnNext {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.home .rolePage .headBox .btnPrev {
+  left: 0.78rem;
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -9.39rem -2.98rem;
+  width: 0.7rem;
+  height: 0.51rem;
+}
+
+.home .rolePage .headBox .btnPrev:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -10.13rem -2.98rem;
+  width: 0.7rem;
+  height: 0.51rem;
+}
+
+.home .rolePage .headBox .btnNext {
+  right: 0.78rem;
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -8.65rem -2.98rem;
+  width: 0.7rem;
+  height: 0.51rem;
+}
+
+.home .rolePage .headBox .btnNext:hover {
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -7.91rem -2.98rem;
+  width: 0.7rem;
+  height: 0.51rem;
+}
+
+@-webkit-keyframes z_xiantiao_hecheng_1_000_anim {
+  0% {
+    opacity: 0;
+  }
+
+  44.12% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes z_xiantiao_hecheng_1_000_anim {
+  0% {
+    opacity: 0;
+  }
+
+  44.12% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes z_xiantiao_hecheng_1_000_transform_bezier_anim {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  44.12% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+}
+
+@keyframes z_xiantiao_hecheng_1_000_transform_bezier_anim {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  44.12% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+}
+
+@-webkit-keyframes z_ins_000_anim {
+  0% {
+    opacity: 1;
+  }
+
+  26.66% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes z_ins_000_anim {
+  0% {
+    opacity: 1;
+  }
+
+  26.66% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes z_ins_000_transform_bezier_anim {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  }
+
+  26.66% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  60% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+}
+
+@keyframes z_ins_000_transform_bezier_anim {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  }
+
+  26.66% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  60% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+    animation-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+  }
+}
+
+.home .feature {
+  width: 18.5rem;
+  height: 12.59rem;
+  margin: 0 auto 0;
+  position: relative;
+}
+
+.home .feature::after {
+  content: '';
+  background: url(../assets/sprite-647388_6473884d.png) no-repeat;
+  background-size: 11.08rem 7.55rem;
+  background-position: -0 -3.26rem;
+  width: 3.09rem;
+  height: 4.25rem;
+  display: block;
+  position: absolute;
+  bottom: -2.08rem;
+  right: -3.54rem;
+}
+
+.home .feature .title {
+  position: absolute;
+  top: 1.7rem;
+  right: 0;
+}
+
+.home .feature .content {
+  position: absolute;
+  top: 3.76rem;
+  left: 50%;
+  -webkit-transform: translateX(-8.24rem);
+  transform: translateX(-8.24rem);
+}
+
+.home .feature .content .home-swiper-mask {
+  width: 9.67rem;
+  height: 5.46rem;
+  background: #1a1e27;
+  position: relative;
+  border-radius: 0.42rem;
+}
+
+.home .feature .content .home-swiper {
+  width: 9.63rem;
+  height: 5.42rem;
+  border-radius: 0.4rem;
+  background: #1a1e27;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-4.82rem, -50%);
+  transform: translate(-4.82rem, -50%);
+}
+
+.home .feature .content .home-swiper .swiper-slide {
+  overflow: hidden;
+}
+
+.home .feature .content .home-swiper .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.home .feature .content .home-swiper-pagination {
+  height: 0.2rem;
+  margin: 0.43rem auto 0;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0.06rem;
+}
+
+.home .feature .content .home-swiper-pagination .swiper-pagination-bullet {
+  width: 0.23rem;
+  height: 0.23rem;
+  position: relative;
+  background: #191919;
+  margin: 0 0.04rem;
+  opacity: 1;
+  border-radius: 50%;
+  border: 0.03rem solid #8c8c8c;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.home .feature .content .home-swiper-pagination .swiper-pagination-bullet-active {
+  width: 0.24rem;
+  height: 0.24rem;
+  background: #dafc2b;
+  border: 0.02rem solid #dafc2b;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.pop-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 4rem;
+  background: white;
+  color: red;
+}
+
+.pop-bg .pop-close {
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+
+.pop-bg .pop-close:before {
+  content: 'x';
+}
+
+.pop-bg .pop-close:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.msg-pop {
+  padding: 0.4rem 0.2rem;
+  width: 4rem;
+  height: 2rem;
+  color: black;
+}
+
+.msg-pop .message-title {
+  text-align: center;
+  font-size: 0.2rem;
+}
+
+.msg-pop .message-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.msg-pop .message-content.center {
+  text-align: center;
+}
+
+.msg-pop .message-btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+
+.msg-pop .message-btns button {
+  margin: 0 0.1rem;
+}
+
+.video-pop-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.video-pop-mask #pop-video-container {
+  width: 12rem;
+  height: 6.79rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.video-pop-mask #pop-video-container div {
+  width: 100%;
+  height: 100%;
+}
+
+.video-pop-mask #pop-video-container video {
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: identifier_open 0.5s ease-in-out forwards;
+  animation: identifier_open 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes identifier_open {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes identifier_open {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+/** mixins **/
+
+html {
+  font-family: 'MiSans Latin', sans-serif;
+}
+
+.home .kvBox .logo {
+  background: url(../assets/sprite-06fe86_06fe8607.png) no-repeat;
+  background-size: 5.44rem 4.34rem;
+  background-position: -0 -2.83rem;
+  width: 4rem;
+  height: 0.91rem;
+}
+
+.home .kvBox .icon-list .item-1 {
+  display: inline-block;
+  background: url(../assets/sprite-06fe86_06fe8607.png) no-repeat;
+  background-size: 5.44rem 4.34rem;
+  background-position: -0 -3.78rem;
+  width: 2.48rem;
+  height: 0.52rem;
+}
+
+.home .kvBox .icon-list .item-1:hover {
+  background: url(../assets/sprite-06fe86_06fe8607.png) no-repeat;
+  background-size: 5.44rem 4.34rem;
+  background-position: -2.52rem -3.78rem;
+  width: 2.48rem;
+  height: 0.52rem;
+}
+
+.home .kvBox .num {
+  width: 2.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 8.47rem;
+  left: 4.56rem;
+}
+
+.home .kvBox .num p {
+  width: 2.6rem;
+  height: 0.56rem;
+  position: absolute;
+  top: 0.34rem;
+  left: 0.26rem;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: skewX(9deg) rotate(-26deg);
+  transform: skewX(9deg) rotate(-26deg);
+  font-family: 'hyllhj', serif;
+  color: #fff;
+  font-size: 0.22rem;
+  line-height: 0.22rem;
+  text-align: left;
+}
+
+.home .kvBox .num p s {
+  display: block;
+  text-decoration: none;
+}
+
+.home .kvBox .num span {
+  width: 100%;
+  height: 0.4rem;
+  display: block;
+  text-align: center;
+  font-family: 'hyllhj', serif;
+  font-size: 0.46rem;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  position: absolute;
+  top: 0.83rem;
+  left: 0.16rem;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: skewX(15deg) rotate(-25deg);
+  transform: skewX(15deg) rotate(-25deg);
+}
+
+.home .kvBox .yuyue-btn {
+  background: url(../assets/sprite-06fe86_06fe8607.png) no-repeat;
+  background-size: 5.44rem 4.34rem;
+  background-position: -0 -0;
+  width: 2.68rem;
+  height: 2.79rem;
+  right: 6.1rem;
+}
+
+.home .kvBox .yuyue-success {
+  background: url(../assets/sprite-06fe86_06fe8607.png) no-repeat;
+  background-size: 5.44rem 4.34rem;
+  background-position: -2.72rem -0;
+  width: 2.68rem;
+  height: 2.79rem;
+  right: 6.1rem;
+}
+
+.home .rolePage .title {
+  width: 2.54rem;
+  height: 1.23rem;
+  background: url(../assets/title2_de056001.png) no-repeat;
+  background-size: 100% auto;
+  top: -0.25rem;
+}
+
+.home .rolePage .roleName {
+  width: 6.48rem;
+  height: 0.84rem;
+  top: 0.14rem;
+}
+
+.home .rolePage .rightBox .emoTxt {
+  background: url(../assets/sprite-06fe86_06fe8607.png) no-repeat;
+  background-size: 5.44rem 4.34rem;
+  background-position: -4.04rem -2.83rem;
+  width: 1.11rem;
+  height: 0.51rem;
+}
+
+.home .feature .title {
+  width: 2.26rem;
+  height: 1.35rem;
+  background: url(../assets/title3_66d0dd98.png) no-repeat;
+  background-size: 100% auto;
+  top: 1.7rem;
+}

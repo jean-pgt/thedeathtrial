@@ -1,0 +1,607 @@
+/** mixins **/
+/* MiSans */
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Light.woff') format('woff');
+  font-weight: 250;
+}
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Regular.woff') format('woff');
+  font-weight: 330;
+}
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+@font-face {
+  font-family: 'MiSans Latin';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Latin-Bold.woff') format('woff');
+  font-weight: 630;
+}
+/* MiSans */
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Light.woff') format('woff');
+  font-weight: 250;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Regular.woff') format('woff');
+  font-weight: 330;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+@font-face {
+  font-family: 'MiSans';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-Bold.woff') format('woff');
+  font-weight: 630;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-300.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-300.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-500.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-500.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-700.woff") format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'notosanskr';
+  src: url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-regular.woff2") format('woff2'), url("https://comm.res.easebar.com/js/leihuo/fonts/noto/noto-sans-kr-v27-latin_korean-regular.woff2") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* MiSans */
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Light.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Light.woff') format('woff');
+  font-weight: 250;
+}
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Regular.woff') format('woff');
+  font-weight: 330;
+}
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Demibold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Demibold.woff') format('woff');
+  font-weight: 450;
+}
+@font-face {
+  font-family: 'MiSans TC';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Bold.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/MiSans-TC-Bold.woff') format('woff');
+  font-weight: 630;
+}
+/* 汉仪力量黑简体 */
+@font-face {
+  font-family: 'HYLiLiangHeiJ';
+  src: url('https://comm.res.easebar.com/js/leihuo/fonts/HYLiLiangHeiJ-Regular.woff2') format('woff2'), url('https://comm.res.easebar.com/js/leihuo/fonts/HYLiLiangHeiJ-Regular.woff') format('woff');
+  font-weight: 400;
+}
+html,
+body {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  color: #eee;
+}
+body {
+  width: 100%;
+  font-size: 0.16rem;
+  color: #bababa;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 330;
+}
+body::after {
+  content: '';
+  display: block;
+  width: 6.91rem;
+  height: 9.89rem;
+  background: url(../../../../assets/bg-deng_d260ec75.png) no-repeat;
+  background-size: 100%;
+  position: fixed;
+  bottom: -2.97rem;
+  left: 0.54rem;
+  pointer-events: none;
+}
+.footer {
+  position: relative;
+  z-index: 1;
+}
+.footer p {
+  margin: 0;
+}
+.footer a {
+  color: #fff;
+}
+#app {
+  position: relative;
+  background: url(../../../../assets/bg_71d594e0.png) center bottom no-repeat fixed;
+  background-size: cover;
+  padding-bottom: 0.5rem;
+  min-height: 86vh;
+}
+.top-nav {
+  width: 100%;
+  height: 1.02rem;
+  background: url(../../../../assets/nav-bg_b5484097.png) no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 13.7%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.top-nav .logo,
+.top-nav .back {
+  display: block;
+}
+.top-nav .logo {
+  width: 3.39rem;
+  height: 0.51rem;
+  background: url(../../../../assets/logo_667f4c6c.png) center center no-repeat;
+  background-size: 100%;
+}
+.top-nav .back {
+  width: 1.87rem;
+  height: 0.51rem;
+  background: url(../../../../assets/back-btn-en_c2efaab9.png);
+  background-size: 100%;
+}
+.top-nav .back:hover {
+  background: url(../../../../assets/back-btn-en-h_2e6a18ae.png);
+  background-size: 100%;
+}
+.news-list-title {
+  width: 16.4rem;
+  height: 0.82rem;
+  margin: 0.36rem auto 0.98rem;
+  position: relative;
+  left: 0.85rem;
+}
+.news-list-title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../../../assets/news-list-title_1a5f0203.png);
+  background-size: 100%;
+  width: 3.6rem;
+  height: 1.1rem;
+}
+.news-list-title::after {
+  content: '';
+  display: block;
+  width: 17.9rem;
+  height: 2.24rem;
+  background: url(../../../../assets/news-title-line_c1402369.png);
+  background-size: 100%;
+  position: absolute;
+  bottom: -1.7rem;
+  left: -0.8rem;
+}
+.news-list-content {
+  width: 16.4rem;
+  margin: auto;
+  position: relative;
+  left: 0.9rem;
+  z-index: 2;
+}
+.news-list-content .news-nav {
+  font-family: 'MiSans Latin', serif;
+  font-weight: 450;
+  font-size: 0.34rem;
+  margin-bottom: 0.47rem;
+}
+.news-list-content .news-nav-item {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 0.57rem;
+  text-align: center;
+  width: 2.2rem;
+  color: #1d1d1d;
+  margin-right: 0.2rem;
+}
+.news-list-content .news-nav-item.active,
+.news-list-content .news-nav-item:hover {
+  color: #f0f0f0;
+  width: 2.2rem;
+  height: 0.57rem;
+  background: url(../../../../assets/tab-bg-h_eabc1834.png);
+  background-size: 100%;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+}
+.news-list-content .news-list .news-item {
+  width: 16.4rem;
+  height: 2.8rem;
+  text-decoration: none;
+  background: #d8d8d8;
+  border-radius: 0.03rem;
+  display: block;
+  margin-bottom: 0.16rem;
+}
+.news-list-content .news-list .news-item .news-item-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1d1d1d;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-left {
+  margin: 0 0.74rem;
+  width: 4.97rem;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-left .left-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.12rem;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .tag {
+  background: #3044db;
+  font-size: 0.26rem;
+  color: #fff;
+  width: auto;
+  height: 0.36rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  margin-right: 0.12rem;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+  white-space: nowrap;
+  padding: 0 0.03rem;
+  line-height: 0.36rem;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .news-title {
+  font-size: 0.3rem;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 630;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: auto;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-left .news-desc {
+  font-size: 0.24rem;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 450;
+  word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+  margin: 0.3rem 0 0.35rem;
+  line-height: 1.5em;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-left .news-date {
+  opacity: 0.47;
+  font-size: 0.24rem;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 450;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-right {
+  width: 9.96rem;
+  height: 2.8rem;
+  border-top-right-radius: 0.04rem;
+  border-bottom-right-radius: 0.04rem;
+  overflow: hidden;
+}
+.news-list-content .news-list .news-item .news-item-content .news-item-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.news-list-content .news-list .news-item:hover {
+  background: url(../../../../assets/item-bg-h_c2ea7212.png) no-repeat;
+  background-size: 100% 100%;
+}
+.news-list-content .news-list .news-item:hover .news-item-content {
+  color: #f0f0f0;
+}
+.news-list-content .news-list .news-item:hover .news-item-content .news-item-left .news-date {
+  color: #e7e7e7;
+}
+.news-list-content .news-list .news-item:hover .news-item-content .news-item-right {
+  overflow: hidden;
+}
+.news-list-content .news-list .news-item:hover .news-item-content .news-item-right img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.news-list-content .paging {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: 'MiSans', serif;
+  font-weight: 330;
+  padding-right: 0.2rem;
+  margin: 0.39rem 0 0.5rem;
+}
+.news-list-content .paging .prev-page,
+.news-list-content .paging .next-page {
+  width: 0.43rem;
+  height: 0.43rem;
+  background: url(../../../../assets/next-btn_cdbf0c7f.png);
+  background-size: 100%;
+  font-size: 0;
+  display: inline-block;
+  margin: 0 0.05rem;
+}
+.news-list-content .paging .prev-page:hover,
+.news-list-content .paging .next-page:hover {
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
+}
+.news-list-content .paging .prev-page {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.news-list-content .paging .number {
+  display: inline-block;
+  font-size: 0.24rem;
+  color: rgba(29, 29, 29, 0.77);
+  text-align: center;
+  line-height: 0.43rem;
+  border-radius: 0.04rem;
+  width: 0.43rem;
+  height: 0.43rem;
+  text-decoration: none;
+  margin: 0 0.05rem;
+}
+.news-list-content .paging .number.select,
+.news-list-content .paging .number:hover {
+  color: rgba(250, 250, 250, 0.77);
+  background: #292929;
+}
+.news-list-content .paging .goto {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.24rem;
+  margin-left: 0.33rem;
+  font-family: 'MiSans Latin', serif;
+  font-weight: 330;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.news-list-content .paging .goto #page-num {
+  width: 0.55rem;
+  height: 0.44rem;
+  border-radius: 0.06rem;
+  outline: none;
+  background: #fafafa;
+  border: 0.01rem solid #eee;
+  margin: 0 0.05rem;
+  text-align: center;
+}
+#top {
+  display: none;
+  width: 0.91rem;
+  height: 1.37rem;
+  background: url(../../../../assets/top-2k_bcee4f7f.png);
+  background-size: 100%;
+  position: fixed;
+  bottom: 1.6rem;
+  right: 0.3rem;
+  z-index: 2;
+}
+#top:hover {
+  background: url(../../../../assets/top-2k-h_06da56b6.png);
+  background-size: 100%;
+}
+body.en .news-list-title {
+  margin-top: 0.72rem;
+}
+body.en .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .tag {
+  width: 1.1rem;
+  padding: 0;
+}
+body.en .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .news-title {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+body.jp {
+  font-family: 'MiSans', serif;
+  font-weight: 330;
+}
+body.jp .top-nav .logo {
+  width: 2.57rem;
+  height: 0.51rem;
+  background: url(../../../../assets/logo_3d4b4daa.png) center center no-repeat;
+  background-size: 100%;
+}
+body.jp .top-nav .back {
+  width: 1.17rem;
+  height: 0.52rem;
+  background: url(../../../../assets/back-btn-jp_6b5ab240.png) no-repeat;
+  background-size: 100%;
+}
+body.jp .top-nav .back:hover {
+  background: url(../../../../assets/back-btn-jp-h_89518e0e.png) no-repeat;
+  background-size: 100%;
+}
+body.jp .news-list-title {
+  height: 1.37rem;
+  margin: 0.45rem auto 0.77rem;
+}
+body.jp .news-list-title::before {
+  background: url(../../../../assets/news-list-title-jp-2k_62ff35bf.png);
+  background-size: 100%;
+  width: 3.59rem;
+  height: 1.37rem;
+}
+body.jp .news-list-title::after {
+  bottom: -1.45rem;
+}
+body.jp .news-list-content .news-nav {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.jp .news-list-content .news-nav-item.active,
+body.jp .news-list-content .news-nav-item:hover {
+  color: #f0f0f0;
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.jp .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .tag {
+  font-size: 0.3rem;
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.jp .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .news-title {
+  font-family: 'MiSans', serif;
+  font-weight: 630;
+}
+body.jp .news-list-content .news-list .news-item .news-item-content .news-item-left .news-desc {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.jp .news-list-content .news-list .news-item .news-item-content .news-item-left .news-date {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.jp .news-list-content .paging .goto {
+  font-family: 'MiSans', serif;
+  font-weight: 330;
+}
+body.jp .news-list-content .paging .goto #page-num {
+  border: 0.75px solid #7f7f7f;
+  /* no */
+}
+body.jp .footer {
+  font-family: 'MiSans', serif;
+  font-weight: 450;
+}
+body.kr {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+}
+body.kr .top-nav .logo {
+  width: 2.6rem;
+  height: 0.51rem;
+  background: url(../../../../assets/logo_27b969be.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+body.kr .top-nav .back {
+  width: 2.46rem;
+  height: 0.53rem;
+  background: url(../../../../assets/back-btn-kr_7c454953.png) no-repeat;
+  background-size: 100% 100%;
+}
+body.kr .top-nav .back:hover {
+  background: url(../../../../assets/back-btn-kr-h_bbb7731d.png) no-repeat;
+  background-size: 100% 100%;
+}
+body.kr .news-list-title {
+  height: 1.37rem;
+  margin: 0.45rem auto 0.76rem;
+}
+body.kr .news-list-title::before {
+  background: url(../../../../assets/news-list-title-kr-2k_9a6ffa4c.png);
+  background-size: 100%;
+  width: 2.6rem;
+  height: 1.37rem;
+}
+body.kr .news-list-title::after {
+  bottom: -1.44rem;
+}
+body.kr .news-list-content .news-nav {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+}
+body.kr .news-list-content .news-nav-item.active,
+body.kr .news-list-content .news-nav-item:hover {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 1px #f0f0f0;
+  font-family: 'notosanskr', serif;
+  font-weight: 700;
+}
+body.kr .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top {
+  margin-top: 0.15rem;
+}
+body.kr .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .tag {
+  height: 0.37rem;
+  line-height: 0.37rem;
+  font-size: 0.3rem;
+  font-family: 'notosanskr', serif;
+  font-weight: 700;
+}
+body.kr .news-list-content .news-list .news-item .news-item-content .news-item-left .left-top .news-title {
+  font-family: 'notosanskr', serif;
+  font-weight: 700;
+}
+body.kr .news-list-content .news-list .news-item .news-item-content .news-item-left .news-desc {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+  margin: 0.25rem 0 0.3rem;
+}
+body.kr .news-list-content .news-list .news-item .news-item-content .news-item-left .news-date {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+}
+body.kr .news-list-content .paging .goto {
+  font-family: 'notosanskr', serif;
+  font-weight: normal;
+}
+body.kr .news-list-content .paging .goto #page-num {
+  border: 1px solid #7f7f7f;
+  /* no */
+}
+
